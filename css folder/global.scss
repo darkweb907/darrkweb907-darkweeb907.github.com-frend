@@ -1,0 +1,241 @@
+@import "variable";
+header{
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+        a{
+            padding: 0 1rem;
+            font-family: 'Open Sans', sans-serif;
+            text-decoration: none;
+            color: $DarkBlue;
+           
+        }
+        
+}
+.file{
+    margin-top: 4rem;
+    margin-bottom: 9rem;
+    h1{
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        color:$DarkBlue;
+        font-size: 2.3rem;
+    }
+    p{
+        color: $DarkBlue;
+        font-weight: 400;
+    }
+    .found{
+        .cash{
+            border-color: red;
+        }
+        input{
+            padding: 4px 1rem;
+        }
+        p{
+            color: red;
+            display: none;
+        }
+        span{
+            color: $GrayishBlue;
+            background-color: $BrightBlue;
+            &:hover{
+                background-color:hsl(224, 74%, 75%);;
+            }
+        }
+    }
+}
+.farm{
+    padding: 10rem 0 3rem 0;
+    background: url(../images/bg-curve-desktop.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    h1{
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        color:$DarkBlue;
+        font-size: 2rem;  
+    }
+    p{
+        color: $DarkBlue;
+        font-weight: 400;
+    } 
+    h5{
+        color:$Cyan;
+        position: relative;
+        & ::after{
+            content: "";
+           
+            bottom: -8px;
+            display: block;
+            width: 39%;
+            height: auto;
+            border: 1px solid;
+        }
+    }
+    .huddle{
+        img{
+            width: 16%;
+            height: 16%;
+        }
+       .avatar{
+        margin-left: 14px;
+        h2{
+            font-size: 1rem;
+        }
+        p{
+            font-size: 12px;
+        }
+       }
+    }
+    .cape{
+        padding: 1rem;
+        border-radius: 6px;
+        box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    }   
+}
+.today{
+    background-color: $Blue;
+    .free{
+        background-color: $BrightBlue;
+        color: white;
+        &:hover{
+            background-color:hsl(224, 74%, 75%);
+        }
+    }
+    .your{
+        display: none;
+        color: white;
+    }
+}
+.foot{
+   padding: 6rem 0;
+   background-color: $DarkBlue;
+   .press{
+    li:not(:last-child){
+      padding: 9px 0;  
+    } 
+    a{
+        color: white;
+        &:hover{
+            color: $BrightBlue;
+        }
+    }
+   }
+   .privacy{
+    a{
+        color: white;
+        &:hover{
+            color: $BrightBlue;
+        }
+    }
+    li:not(:last-child){
+      padding: 9px 0;  
+    } 
+   }
+   .face{
+    span{
+        border: 2px solid;
+        padding: 9px 9px;
+        border-radius: 30px;
+       }
+   }
+  
+  
+   
+}
+@media (max-width:767px) {
+   header{
+    a{
+        padding: 9px;
+    }
+   
+   }
+   .file{
+       margin-bottom: 0;
+       margin-top: 8rem;
+ .film{
+     margin: 4rem 0;
+     h1{
+         margin: 1.5rem 0;
+     }
+     .found{
+         input{
+             margin: 1rem 0;
+         }
+     }
+ }   
+}
+.farm{
+    padding-top: 6rem;
+    h1{
+        text-align: center;
+        font-size: 1.8rem;
+    }
+    .mage{
+        margin-bottom: 3rem;
+    }
+            h5{
+        color:$Cyan;
+        position: relative;
+        & ::after{
+            max-width: 100%;
+            content: "";
+            /* position: absolute; */
+            bottom: -8px;
+            display: block;
+            width: 42%;
+            /* height: auto; */
+            border: 1px solid;
+            margin: 14px auto;
+        }
+    }
+  }
+  .today{
+      text-align: center;
+      padding: 2rem 0;
+  }
+  .foot{
+      padding: 4rem 0 3rem 0;
+      .mart{
+          margin: 1rem 0;
+      }
+      .telephone{
+          margin: 1rem 0;
+        span{
+            font-size: 23px;
+        }
+      } 
+      .email{
+        
+      span{
+          font-size: 23px;
+      }
+    } 
+    ul{
+        font-size: 21px;
+    }
+  }
+
+}
+@media (max-width:375px) {
+    header{
+        img{
+            width: 20%;
+        }
+        a{
+            padding: 0px;
+        }
+       
+       } 
+       .farm{
+        padding: 10rem 0 3rem 0;
+        background: url(../images/bg-curve-mobile.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+       } 
+}
+

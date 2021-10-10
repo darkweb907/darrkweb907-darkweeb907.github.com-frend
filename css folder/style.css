@@ -1,0 +1,260 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* :active {
+  color: none;
+  border: none;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header a {
+  padding: 0 1rem;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  color: #070439;
+}
+
+.file {
+  margin-top: 4rem;
+  margin-bottom: 9rem;
+}
+
+.file h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  color: #070439;
+  font-size: 2.3rem;
+}
+
+.file p {
+  color: #070439;
+  font-weight: 400;
+}
+
+.file .found .cash {
+  border-color: red;
+}
+
+.file .found input {
+  padding: 4px 1rem;
+}
+
+.file .found p {
+  color: red;
+  display: none;
+}
+
+.file .found span {
+  color: #f6f6fe;
+  background-color: #3065f8;
+}
+
+.file .found span:hover {
+  background-color: #90a9ee;
+}
+
+.farm {
+  padding: 10rem 0 3rem 0;
+  background: url(../images/bg-curve-desktop.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.farm h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  color: #070439;
+  font-size: 2rem;
+}
+
+.farm p {
+  color: #070439;
+  font-weight: 400;
+}
+
+.farm h5 {
+  color: #3c9f8f;
+  position: relative;
+}
+
+.farm h5 ::after {
+  content: "";
+  bottom: -8px;
+  display: block;
+  width: 39%;
+  height: auto;
+  border: 1px solid;
+}
+
+.farm .huddle img {
+  width: 16%;
+  height: 16%;
+}
+
+.farm .huddle .avatar {
+  margin-left: 14px;
+}
+
+.farm .huddle .avatar h2 {
+  font-size: 1rem;
+}
+
+.farm .huddle .avatar p {
+  font-size: 12px;
+}
+
+.farm .cape {
+  padding: 1rem;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.today {
+  background-color: #585989;
+}
+
+.today .free {
+  background-color: #3065f8;
+  color: white;
+}
+
+.today .free:hover {
+  background-color: #90a9ee;
+}
+
+.today .your {
+  display: none;
+  color: white;
+}
+
+.foot {
+  padding: 6rem 0;
+  background-color: #070439;
+}
+
+.foot .press li:not(:last-child) {
+  padding: 9px 0;
+}
+
+.foot .press a {
+  color: white;
+}
+
+.foot .press a:hover {
+  color: #3065f8;
+}
+
+.foot .privacy a {
+  color: white;
+}
+
+.foot .privacy a:hover {
+  color: #3065f8;
+}
+
+.foot .privacy li:not(:last-child) {
+  padding: 9px 0;
+}
+
+.foot .face span {
+  border: 2px solid;
+  padding: 9px 9px;
+  border-radius: 30px;
+}
+
+@media (max-width: 767px) {
+  header a {
+    padding: 9px;
+  }
+  .file {
+    margin-bottom: 0;
+    margin-top: 8rem;
+  }
+  .file .film {
+    margin: 4rem 0;
+  }
+  .file .film h1 {
+    margin: 1.5rem 0;
+  }
+  .file .film .found input {
+    margin: 1rem 0;
+  }
+  .farm {
+    padding-top: 6rem;
+  }
+  .farm h1 {
+    text-align: center;
+    font-size: 1.8rem;
+  }
+  .farm .mage {
+    margin-bottom: 3rem;
+  }
+  .farm h5 {
+    color: #3c9f8f;
+    position: relative;
+  }
+  .farm h5 ::after {
+    max-width: 100%;
+    content: "";
+    /* position: absolute; */
+    bottom: -8px;
+    display: block;
+    width: 42%;
+    /* height: auto; */
+    border: 1px solid;
+    margin: 14px auto;
+  }
+  .today {
+    text-align: center;
+    padding: 2rem 0;
+  }
+  .foot {
+    padding: 4rem 0 3rem 0;
+  }
+  .foot .mart {
+    margin: 1rem 0;
+  }
+  .foot .telephone {
+    margin: 1rem 0;
+  }
+  .foot .telephone span {
+    font-size: 23px;
+  }
+  .foot .email span {
+    font-size: 23px;
+  }
+  .foot ul {
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 375px) {
+  header img {
+    width: 20%;
+  }
+  header a {
+    padding: 0px;
+  }
+  .farm {
+    padding: 10rem 0 3rem 0;
+    background: url(../images/bg-curve-mobile.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+/*# sourceMappingURL=style.css.map */
